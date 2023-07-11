@@ -1,0 +1,119 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", "Poppins", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Brush Script MT";
+  src: url("/assets/fonts/brush_script_std_italic.ttf");
+}
+
+html,
+body,
+.app,
+#root {
+  min-height: 100vh;
+  background-color: transparent;
+}
+.sidebar {
+  min-height: 100vh;
+  width: 80px;
+  z-index: 99;
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.home-section {
+  position: relative;
+  background-color: "blue";
+  min-height: 100vh;
+  top: 0;
+  left: 80px;
+  width: calc(100% - 80px);
+  transition: all 0.25s ease;
+  z-index: 2;
+}
+
+.sidebar.open {
+  width: 270px;
+}
+.sidebar.open ~ .home-section {
+  left: 270px;
+  width: calc(100% - 270px);
+}
+.btn-menu:hover {
+  color: #9c27b0;
+}
+
+.text-shadow {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.box-shadow {
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ant-picker,
+.ant-picker-range {
+  background-color: transparent !important;
+}
+.ant-picker,
+.ant-picker-range:hover {
+  background-color: transparent !important;
+}
+.ant-picker.ant-picker-focused,
+.ant-picker-range.ant-picker-focused {
+  background-color: transparent !important;
+}
+.ant-picker > .ant-picker-input > .ant-picker-suffix,
+.ant-picker-range > .ant-picker-suffix {
+  color: #9c27b0 !important;
+}
+.ant-picker > .ant-picker-input > .ant-picker-clear,
+.ant-picker-range > .ant-picker-clear {
+  color: #9c27b0 !important;
+}
+.ant-picker-range > .ant-picker-range-separator > span {
+  color: #9c27b0 !important;
+}
+
+.ant-picker-range > .ant-picker-active-bar {
+  background-color: #116482 !important;
+}
+.ant-picker > .ant-picker-input > input,
+.ant-picker-range > .ant-picker-input > input {
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.ant-picker-range > .ant-picker-input > input::placeholder {
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.ant-picker > .ant-picker-input > input::placeholder {
+  color: black;
+}
+
+/* iconos de herramientas en el odontograma */
+
+.icono_seleccionado {
+  background-color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.pro-arrow-wrapper > .pro-arrow {
+  border-color: #3a1956 !important;
+}
