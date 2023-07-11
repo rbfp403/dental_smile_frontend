@@ -57,6 +57,8 @@ export const useRecursosFotosStore = () => {
     }
   };
 
+  //
+
   const startSavingRecursoFoto = async (dataRecurso, arrImgUrlDel) => {
     dispatch(clearErrorRegRecurso());
 
@@ -130,6 +132,7 @@ export const useRecursosFotosStore = () => {
         }
         await Promise.all(arrNewFotos);
 
+        //registro en el store
         dataRecursoBD.fotos = idsUrlsFotos;
         dispatch(onSaveRecurso(dataRecursoBD));
         dispatch(onSetActiveRecurso(dataRecursoBD));

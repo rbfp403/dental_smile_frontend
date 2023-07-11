@@ -1,16 +1,16 @@
+//
+
 export const uploadImage = async (file) => {
   //
 
   if (!file) throw new Error("No tenemos ningúna archivo a subir");
 
-  const cloudUrl = "https://api.cloudinary.com/v1_1/dcf1pwzqj/upload";
-
   const formData = new FormData();
-  formData.append("upload_preset", "denta_smile_app");
+  formData.append("upload_preset", import.meta.env.VITE_NAME_UPLOAD_PRESET);
   formData.append("file", file);
 
   try {
-    const resp = await fetch(cloudUrl, {
+    const resp = await fetch(import.meta.env.VITE_CLOUDINARY_URL, {
       method: "POST",
       body: formData,
     });

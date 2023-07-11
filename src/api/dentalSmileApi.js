@@ -1,10 +1,7 @@
 import axios from "axios";
-import { getEnvVariables } from "../helpers/getEnvVariables";
-
-const { VITE_API_URL } = getEnvVariables();
 
 const dentalSmileApi = axios.create({
-  baseURL: VITE_API_URL,
+  baseURL: import.meta.env.VITE_BACKEND_URL_API,
 });
 
 export default dentalSmileApi;
