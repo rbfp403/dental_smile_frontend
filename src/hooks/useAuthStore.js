@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { changeStatusAuth, onChangeMsgErrorLog } from "../store";
+import { onChangeMsgErrorLog } from "../store";
 import { changePassword, loginAdmin } from "../api/auth.api";
 
 //
@@ -10,26 +10,16 @@ import { changePassword, loginAdmin } from "../api/auth.api";
 export const useAuthStore = () => {
   const dispatch = useDispatch();
 
-  const { authenticatedStatus, errorMsgAuth } = useSelector(
-    (state) => state.auth
-  );
-
-  const checkAuthStatus = () => {
-    const auth = localStorage.getItem("auth");
-    if (auth === "true") {
-      dispatch(changeStatusAuth(true));
-    } else {
-      dispatch(changeStatusAuth(false));
-    }
-  };
+  const { errorMsgAuth } = useSelector((state) => state.auth);
 
   const login = async (password) => {
     try {
       await loginAdmin({ passwordUser: password });
-
       localStorage.setItem("auth", true);
       dispatch(onChangeMsgErrorLog({ msg: "Sin errores", error: "" }));
-      dispatch(changeStatusAuth(true));
+      window.location.reload();
+
+      //
     } catch (error) {
       console.log(error);
       dispatch(
@@ -64,19 +54,17 @@ export const useAuthStore = () => {
   };
 
   const logout = () => {
-    // localStorage.setItem("auth", false);
-    // localStorage.removeItem()
     localStorage.clear();
-    dispatch(changeStatusAuth(false));
+    window.location.reload();
   };
 
   return {
     //* Propiedades
-    authenticatedStatus,
+
     errorMsgAuth,
 
     //* Métodos
-    checkAuthStatus,
+
     login,
     logout,
     updatePassword,

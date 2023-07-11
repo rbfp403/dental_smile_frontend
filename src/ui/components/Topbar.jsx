@@ -86,10 +86,7 @@ export const Topbar = () => {
         stateOpen={openDialogLogout}
         setStateOpen={setOpenDialogLogout}
         message={<>¿Desea salir de la aplicación?</>}
-        funcionDelete={() => {
-          logout();
-          window.location.reload();
-        }}
+        funcionDelete={logout}
       />
     </>
   );

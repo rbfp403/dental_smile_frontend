@@ -1,6 +1,7 @@
+import { Link as RouterLink } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Grid, Icon, IconButton, Typography } from "@mui/material";
+import { Box, Grid, Icon, IconButton, Link, Typography } from "@mui/material";
 import {
   AccessTime,
   CloseOutlined,
@@ -162,14 +163,18 @@ export const ViewCita = ({ closeCitaView }) => {
               <IconButton
                 onClick={() => {
                   handleChangeTabs(1);
-                  navigate(`/pacientes/${activeCita.id_paciente}/historial`);
                 }}
               >
-                <PersonSearch
-                  sx={{
-                    color: "#02ECEE",
-                  }}
-                />
+                <Link
+                  component={RouterLink}
+                  to={`/pacientes/${activeCita.id_paciente}/historial`}
+                >
+                  <PersonSearch
+                    sx={{
+                      color: "#02ECEE",
+                    }}
+                  />
+                </Link>
               </IconButton>
             }
           />
