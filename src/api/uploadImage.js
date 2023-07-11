@@ -6,7 +6,7 @@ export const uploadImage = async (file) => {
   if (!file) throw new Error("No tenemos ningúna archivo a subir");
 
   const formData = new FormData();
-  formData.append("upload_preset", import.meta.env.VITE_NAME_UPLOAD_PRESET);
+  formData.append("upload_preset", import.meta.env.VITE_UPLOAD_PRESET_NAME);
   formData.append("file", file);
 
   try {
