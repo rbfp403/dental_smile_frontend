@@ -33,7 +33,7 @@ export const useUiStore = () => {
     const { pathname } = window.location;
 
     if (pathname !== "/auth/login") {
-      localStorage.setItem("lastRoute", pathname);
+      // localStorage.setItem("lastRoute", pathname);
     }
     const pathnameCut = pathname.substring(0, 17);
     let pageActive = "";

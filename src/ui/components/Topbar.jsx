@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import { ExitToApp } from "@mui/icons-material";
 import { ButtonCustom } from "./FormInModal/ButtonCustom";
@@ -7,6 +8,7 @@ import { useAuthStore, useUiStore } from "../../hooks";
 
 export const Topbar = () => {
   //
+  const navigate = useNavigate();
 
   const { isSidebarOpen, pageActive } = useUiStore();
 
@@ -84,7 +86,10 @@ export const Topbar = () => {
         stateOpen={openDialogLogout}
         setStateOpen={setOpenDialogLogout}
         message={<>¿Desea salir de la aplicación?</>}
-        funcionDelete={logout}
+        funcionDelete={() => {
+          logout();
+          window.location.reload();
+        }}
       />
     </>
   );

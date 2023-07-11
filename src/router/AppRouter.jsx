@@ -8,16 +8,37 @@ import { LoginPage } from "../auth/pages";
 import { useAuthStore } from "../hooks";
 
 export const AppRouter = () => {
-  //
   const { authenticatedStatus, checkAuthStatus } = useAuthStore();
 
-  useEffect(() => {
-    checkAuthStatus();
-  }, []);
+  // useEffect(() => {
+  //   checkAuthStatus();
+  // }, []);
 
-  const lastRoute = localStorage.getItem("lastRoute") || "/agenda";
+  // const lastRoute = localStorage.getItem("lastRoute") || "/agenda";
+  // if (!authenticatedStatus) {
+  //   return (
+  //     <Routes>
+  //       <Route path="/auth/login" element={<LoginPage />} />
+  //       <Route path="/*" element={<Navigate to="/auth/login" />} />
+  //     </Routes>
+  //   );
+  // } else {
+  //   return (
+  //     <AppTheme>
+  //       <Routes>
+  //         <Route path="/*" element={<Navigate to={"/agenda"} />} />
+  //         <Route path="/agenda/*" element={<AgendaRoutes />} />
+  //         <Route path="/administracion/*" element={<DashboardRoutes />} />
+  //         <Route path="/pacientes/*" element={<PacientesRoutes />} />
+  //       </Routes>
+  //     </AppTheme>
+  //   );
+  // }
 
-  return authenticatedStatus === false ? (
+  console.log(localStorage.getItem("auth"));
+  return localStorage.getItem("auth") !== "true" ? (
+    //  ||
+    //   localStorage.getItem("auth") === null
     <Routes>
       <Route path="/auth/login" element={<LoginPage />} />
       <Route path="/*" element={<Navigate to="/auth/login" />} />
@@ -25,7 +46,7 @@ export const AppRouter = () => {
   ) : (
     <AppTheme>
       <Routes>
-        <Route path="/*" element={<Navigate to={lastRoute} />} />
+        <Route path="/*" element={<Navigate to={"/agenda"} />} />
         <Route path="/agenda/*" element={<AgendaRoutes />} />
         <Route path="/administracion/*" element={<DashboardRoutes />} />
         <Route path="/pacientes/*" element={<PacientesRoutes />} />

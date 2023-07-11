@@ -32,7 +32,6 @@ export const useAuthStore = () => {
       dispatch(changeStatusAuth(true));
     } catch (error) {
       console.log(error);
-      console.log(error.response.data.message);
       dispatch(
         onChangeMsgErrorLog({
           msg: "Hay errores",
@@ -50,6 +49,8 @@ export const useAuthStore = () => {
       });
 
       dispatch(onChangeMsgErrorLog({ msg: "Sin errores", error: "" }));
+
+      //
     } catch (error) {
       console.log(error);
       console.log(error.response.data.message);
