@@ -116,7 +116,10 @@ export const useTipTratamStore = () => {
       console.log(error);
 
       let msgError = error.response.data.message || "";
-      if (msgError.includes("fk_tratamiento_planTerapeutico")) {
+      if (
+        msgError.includes("fk_tratamiento_planTerapeutico") ||
+        msgError.includes("fk_tipo_tratam_tratamiento")
+      ) {
         msgError =
           "No se puede eliminar el tratamiento porque esta siendo usado en las consultas registradas";
       }

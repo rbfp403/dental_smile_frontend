@@ -76,11 +76,6 @@ export const FormRecursoFoto = ({ stateDialog, setStateDialog, titleForm }) => {
     setStateDialog(false);
   };
 
-  const cleanArrImages = () => {
-    setSelectedImages([]);
-    setArrImgSelect([]);
-  };
-
   const handleImageDelete = (index, image) => {
     if (typeof image === "object") {
       setArrImgUrlDel([...arrImgUrlDel, image.id]);
@@ -88,22 +83,16 @@ export const FormRecursoFoto = ({ stateDialog, setStateDialog, titleForm }) => {
 
     setSelectedImages((prevImages) => {
       const updatedImages = [...prevImages];
-      // if (updatedImages.length > 0) {
+
       updatedImages.splice(index, 1);
       return updatedImages;
-      // } else {
-      //   return [];
-      // }
     });
 
     setArrImgSelect((prevImages) => {
       const updatedImages = [...prevImages];
-      // if (index !== 0) {
+
       updatedImages.splice(index, 1);
       return updatedImages;
-      // } else {
-      //   return [];
-      // }
     });
   };
 
@@ -318,7 +307,7 @@ export const FormRecursoFoto = ({ stateDialog, setStateDialog, titleForm }) => {
         >
           <div>
             <Typography fontWeight="bold" fontSize="17px" color="primary.main">
-              Fotografías
+              Imágenes
             </Typography>
             {msgTypeFileProblem && (
               <Typography
@@ -340,18 +329,6 @@ export const FormRecursoFoto = ({ stateDialog, setStateDialog, titleForm }) => {
               onChange={handleImageUpload}
               style={{ display: "none" }}
             />
-
-            <IconButton
-              color="primary"
-              onClick={cleanArrImages}
-              sx={{
-                ":hover": {
-                  color: "black",
-                },
-              }}
-            >
-              <DeleteOutline />
-            </IconButton>
 
             <IconButton
               color="primary"

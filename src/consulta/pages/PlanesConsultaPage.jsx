@@ -113,7 +113,7 @@ export const PlanesConsultaPage = () => {
               paddingLeft: "20px",
             }}
           >
-            Planes de diagnóstico, terapéutico y educacional
+            Planes de diagnóstico, terapéuticos y educacionales
           </Typography>
         </Box>
 

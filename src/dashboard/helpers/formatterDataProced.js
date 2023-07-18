@@ -95,6 +95,7 @@ export const formatearDataProcedRealizadosToTable = (dataFromBD) =>
       procedimiento: data.Procedimiento,
       paciente: data.Paciente,
       consulta: data.Consulta,
+      diagnostico: data.Diagnostico,
       tratamiento: data.Tratamiento,
       pago: data.Ingreso ? parseFloat(data.Ingreso) : "",
     };

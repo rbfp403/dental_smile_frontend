@@ -7,6 +7,7 @@ import {
   Grid,
   IconButton,
   Portal,
+  TextField,
   Typography,
 } from "@mui/material";
 import {
@@ -368,8 +369,8 @@ export const FormModalTratam = ({ openModal, setOpenModal, title }) => {
                     setStateTipTratam(newValue);
                   }}
                   propsTextField={{
-                    label: "Tipo de tratamiento:",
-                    placeholder: "Seleccione el tipo de tratamiento",
+                    label: "Tratamiento:",
+                    placeholder: "Seleccione el tratamiento",
                   }}
                   autoFocus
                   iconAutocomplete={
@@ -469,12 +470,41 @@ export const FormModalTratam = ({ openModal, setOpenModal, title }) => {
                   />
                 </Box>
                 <Box display="flex" flexDirection="column" rowGap="8px">
-                  {arrProcedimientos.map((proced) => (
-                    <TxtProcedFormTratam
-                      data={proced}
-                      fnDelete={removeProced}
-                    />
-                  ))}
+                  {arrProcedimientos.length === 0 ? (
+                    <Box display="flex" flexDirection="row" columnGap="2px">
+                      <TextField
+                        size="small"
+                        multiline
+                        fullWidth
+                        hiddenLabel
+                        variant="filled"
+                        InputProps={{
+                          readOnly: true,
+                        }}
+                        sx={{
+                          "& .MuiInputBase-root ": {
+                            padding: "7px 5px 3px 5px",
+                            backgroundColor: "myBgColor.main",
+                            ":hover": {
+                              backgroundColor: "myBgColor.main",
+                            },
+                          },
+                        }}
+                      />
+                      <IconButton>
+                        <CloseOutlined
+                          style={{ fontSize: "20px", color: "#d32f2f" }}
+                        />
+                      </IconButton>
+                    </Box>
+                  ) : (
+                    arrProcedimientos.map((proced) => (
+                      <TxtProcedFormTratam
+                        data={proced}
+                        fnDelete={removeProced}
+                      />
+                    ))
+                  )}
                 </Box>
               </Grid>
 

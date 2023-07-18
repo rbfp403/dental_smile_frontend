@@ -39,14 +39,14 @@ export const ListaTiposPagos = () => {
   }, []);
 
   //hooks
-  const [stateTipo, setStateTipo] = useState("Todos");
+  const [stateTipo, setStateTipo] = useState("Todos los tipos de pagos");
   const [stateModalTipPago, setStateModalTipPago] = useState(false);
   const [titleFormTiPago, setTitleFormTiPago] = useState("");
   const [msgAlertDel, setMsgAlertDel] = useState("");
 
   //control de modal registrar y editar
   const openModalTipPagoReg = () => {
-    setTitleFormTiPago("Registro de tipo de pago");
+    setTitleFormTiPago("Registrar tipo de pago");
     setStateModalTipPago(true);
   };
 
@@ -87,16 +87,16 @@ export const ListaTiposPagos = () => {
   useEffect(() => {
     let tipoConsulta = "";
     switch (stateTipo) {
-      case "Todos":
+      case "Todos los tipos de pagos":
         tipoConsulta = "todos";
         break;
-      case "Tipos de pago por procedimientos":
+      case "Tipos de pagos por procedimientos":
         tipoConsulta = "procedimiento";
         break;
-      case "Tipos de pago por tipos de consulta":
+      case "Tipos de pagos por tipos de consulta":
         tipoConsulta = "consulta";
         break;
-      case "Tipos de pago creado por el usuario":
+      case "Tipos de pagos creados por el usuario":
         tipoConsulta = "usuario";
         break;
 
@@ -155,14 +155,14 @@ export const ListaTiposPagos = () => {
           alignItems="end"
         >
           <CustomSelect
-            lblText="Filtrar registros:"
+            lblText="Tipos de pago por:"
             altura="42px"
             ancho="330px"
             listOptions={[
-              "Todos",
-              "Tipos de pago por procedimientos",
-              "Tipos de pago por tipos de consulta",
-              "Tipos de pago creado por el usuario",
+              "Todos los tipos de pagos",
+              "Tipos de pagos por procedimientos",
+              "Tipos de pagos por tipos de consulta",
+              "Tipos de pagos creados por el usuario",
             ]}
             value={stateTipo}
             onChange={(event) => {

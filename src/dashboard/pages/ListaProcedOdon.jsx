@@ -44,7 +44,7 @@ export const ListaProcedOdon = () => {
 
   //control de modal registrar y editar
   const openModalProcedReg = () => {
-    setTitleFormProced("Registro de procedimiento odontológico");
+    setTitleFormProced("Registrar procedimiento odontológico");
     setStateModalProced(true);
   };
 

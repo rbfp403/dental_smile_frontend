@@ -10,6 +10,7 @@ const TABLE_HEAD = [
   { id: "procedimiento", label: "Procedimiento", alignLeft: true },
   { id: "paciente", label: "Paciente", alignLeft: true },
   { id: "consulta", label: "Consulta", alignLeft: true },
+  { id: "diagnostico", label: "Diagnóstico", alignLeft: true },
   { id: "tratamiento", label: "Tratamiento", alignLeft: true },
   { id: "pago", label: "Pago", alignLeft: true },
 ];

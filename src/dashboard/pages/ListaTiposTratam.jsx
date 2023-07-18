@@ -131,7 +131,7 @@ export const ListaTiposTratam = () => {
   //efecto secundario pasar la info del registro de la tabla
   //al tipo de pago activo
   useEffect(() => {
-    if (dataActiva[0] === "Lista de tratamientos odontológicos") {
+    if (dataActiva[0] === "Tratamientos odontológicos") {
       changeDataTipTratam(dataActiva[1]);
     }
   }, [dataActiva]);
@@ -227,7 +227,7 @@ export const ListaTiposTratam = () => {
             iconosEnFila={false}
             columnaABuscarPri="tratamiento"
             searchWhat={"Buscar tratamiento..."}
-            txt_header={"Lista de tratamientos odontológicos"}
+            txt_header={"Tratamientos odontológicos"}
             openModalEdit={openModalTipTratamEdit}
             funcionBtnTblDelete={handleOpenDialogDel}
             funcionDeleteVarious={deleteRegisterTipTratam}

@@ -39,7 +39,7 @@ export const OdontogramaPage = () => {
 
   //efecto secundario carga la data de la tabla a la pieza activa
   useEffect(() => {
-    if (dataActiva[0] === "Odontograma") {
+    if (dataActiva[0] === "Piezas dentales del odontograma") {
       onChangePiezaActiva(dataActiva[1]);
     }
   }, [dataActiva]);
@@ -102,7 +102,7 @@ export const OdontogramaPage = () => {
         sx={{ display: "flex", flexDirection: "column" }}
       >
         <CustomTable
-          txt_header="Odontograma"
+          txt_header="Piezas dentales del odontograma"
           TABLE_HEAD={TABLE_HEAD_PIEZAS}
           DATALIST={piezasListOdon}
           withToolbar

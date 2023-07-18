@@ -50,14 +50,14 @@ export const ExamenesConsultaPage = () => {
   //abrir el modal para crear un examen
   const openModalFormExam = () => {
     setStateModalFormExam(true);
-    setTitleFormExa("Registrar examen estomatognático");
+    setTitleFormExa("Registrar región afectada");
     changeDataExamen(null);
   };
 
   //abrir el modal para editar examen
   const openModalExamEdit = () => {
     setStateModalFormExam(true);
-    setTitleFormExa("Editar examen estomatognático");
+    setTitleFormExa("Editar región afectada");
   };
 
   //abrir confirm dialog eliminar
@@ -77,11 +77,9 @@ export const ExamenesConsultaPage = () => {
   const deleteExamenes = async (selected = []) => {
     await startDeletingExam(selected);
     if (selected.length <= 1) {
-      setMsgAlertDel("El examen estomatognático fue eliminado.");
+      setMsgAlertDel("Region afectada eliminada.");
     } else {
-      setMsgAlertDel(
-        "Los examenes estomatognáticos fueron eliminados exitosamente."
-      );
+      setMsgAlertDel("Las regiones afectadas seleccionadas fueron eliminadas.");
     }
     handleOpenSnackbar();
   };
@@ -106,7 +104,7 @@ export const ExamenesConsultaPage = () => {
           }}
         >
           <Typography variant="h6" fontWeight="bold">
-            Exámenes del sistema estomatognático
+            Examen del sistema estomatognático
           </Typography>
           <ButtonCustom
             altura="45px"
@@ -149,7 +147,7 @@ export const ExamenesConsultaPage = () => {
       <DeleteConfirm
         stateOpen={openDialogDelete}
         setStateOpen={setOpenDialogDelete}
-        message="¿Está segura que desea eliminar el examen estomatognático?"
+        message="¿Está segura que desea eliminar la región afectada del sistema estomatognático?"
         funcionDelete={deleteExamenes}
       />
 

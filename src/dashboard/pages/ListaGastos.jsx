@@ -361,7 +361,7 @@ export const ListaGastos = () => {
         <DeleteConfirm
           stateOpen={openDialogDeleteGas}
           setStateOpen={setOpenDialogDeleteGas}
-          message={"¿Está segura que desea eliminar el registro?"}
+          message={"¿Está segura que desea eliminar el gasto?"}
           funcionDelete={deleteGastos}
         />
 

@@ -604,7 +604,7 @@ export const ListaIngresos = () => {
         <DeleteConfirm
           stateOpen={openDialogDeleteIng}
           setStateOpen={setopenDialogDeleteIng}
-          message={"¿Está segura que desea eliminar el registro?"}
+          message={"¿Está segura que desea eliminar el ingreso?"}
           funcionDelete={deleteIngreso}
         />
 

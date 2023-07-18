@@ -41,7 +41,7 @@ export const ListaTiposConsOdon = () => {
 
   //control de modal registrar y editar
   const openModalTipConsReg = () => {
-    setTitleFormTipCons("Registro de tipo de consulta");
+    setTitleFormTipCons("Registrar tipo de consulta");
     setStateModalTipCons(true);
   };
 
@@ -88,7 +88,7 @@ export const ListaTiposConsOdon = () => {
   //efecto secundario pasar la info del registro de la tabla
   //al tipo de consulta activo
   useEffect(() => {
-    if (dataActiva[0] === "Tipos de consulta odontológica") {
+    if (dataActiva[0] === "Tipos de consultas odontológicas") {
       changeDataTipCons(dataActiva[1]);
     }
   }, [dataActiva]);
@@ -177,7 +177,7 @@ export const ListaTiposConsOdon = () => {
           iconosEnFila={false}
           columnaABuscarPri="tipo_de_consulta"
           searchWhat={"Buscar tipo de consulta ..."}
-          txt_header={"Tipos de consulta odontológica"}
+          txt_header={"Tipos de consultas odontológicas"}
           bgColorPagination="white"
           openModalEdit={openModalTipConsEdit}
           funcionBtnTblDelete={handleOpenDialogDel}

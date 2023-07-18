@@ -125,7 +125,7 @@ export const FormModalExam = ({ openModal, setOpenModal, title }) => {
       // }
     } else {
       setTxtButton("Registrar");
-      setMsgAlert(`Se registro un nuevo examen estomatognático 🙂.`);
+      setMsgAlert(`Región afectada registrada 🙂.`);
     }
   }, [title]);
 

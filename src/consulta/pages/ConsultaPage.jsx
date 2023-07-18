@@ -250,12 +250,12 @@ export const ConsultaPage = () => {
             }}
           >
             <CustomTab label="Detalles" icon={<IconoDetalle />} />
-            <CustomTab label="Exámenes" icon={<IconoExamenes />} />
+            <CustomTab label="Examen" icon={<IconoExamenes />} />
             <CustomTab label="Odontograma" icon={<IconoOdontograma />} />
             <CustomTab label="Salud Bucal" icon={<IconoSaludBucal />} />
             <CustomTab label="Planes" icon={<IconoPlanes />} />
             <CustomTab label="Diagnóstico" icon={<IconoDiagnostico />} />
-            <CustomTab label="Tratamiento" icon={<IconoTratamiento />} />
+            <CustomTab label="Tratamientos" icon={<IconoTratamiento />} />
             <CustomTab label="Imágenes" icon={<IconoRecursos />} />
             <CustomTab label="Pagos" icon={<IconoPagos />} />
           </Tabs>
