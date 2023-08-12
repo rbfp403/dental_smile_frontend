@@ -4,7 +4,7 @@ import {
   deleteDiagnostico,
   getDiagnosticos,
   updateDiagnostico,
-} from "../api/consultas.api";
+} from "../../api/consultas.api";
 import {
   changeRegisterErrorCons,
   clearErrorMessageCons,
@@ -18,7 +18,7 @@ import {
   comprobarErrorDiag,
   formatearDataDiagToBD,
   formatearDataDiagToTable,
-} from "../consulta/helpers";
+} from "../../consulta/helpers";
 
 //
 //

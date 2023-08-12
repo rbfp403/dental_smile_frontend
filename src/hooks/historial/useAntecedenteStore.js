@@ -4,7 +4,7 @@ import {
   deleteAntecedente,
   getAntecedentes,
   updateAntecedente,
-} from "../api/pacientes.api";
+} from "../../api/pacientes.api";
 import {
   changeRegisterErrorAnte,
   clearErrorMessageAnte,
@@ -17,7 +17,7 @@ import {
 import {
   comprobarErrorAnteced,
   formatearDataAntecedToTable,
-} from "../pacientes/helpers";
+} from "../../pacientes/helpers";
 
 //
 //

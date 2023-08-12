@@ -14,11 +14,11 @@ import {
   getSaludBucal,
   updatePzaSaludBucal,
   updateSaludBucal,
-} from "../api/consultas.api";
+} from "../../api/consultas.api";
 import {
   formatearDataPzaSBtoBD,
   formatearDataSaludBucal,
-} from "../consulta/helpers";
+} from "../../consulta/helpers";
 
 //
 //

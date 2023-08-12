@@ -9,7 +9,7 @@ import {
   getSubtitulos,
   getTitulos,
   updateProcedimiento,
-} from "../api/dashboard.api";
+} from "../../api/dashboard.api";
 import {
   clearErrorProcedMsg,
   onChangeAllDataProced,
@@ -30,7 +30,7 @@ import {
   formatearDataProcedToTable,
   formatearDataSubtitulos,
   formatearDataTitulos,
-} from "../dashboard/helpers";
+} from "../../dashboard/helpers";
 
 //
 //

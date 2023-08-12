@@ -4,7 +4,7 @@ import {
   deleteTipoTratam,
   getTipoDeTratam,
   updateTipoTratam,
-} from "../api/dashboard.api";
+} from "../../api/dashboard.api";
 
 import {
   clearErrorTipTratamMsg,
@@ -20,7 +20,7 @@ import {
   comprobarErrorTipTratam,
   formatearDataTipTratamToBD,
   formatearDataTipTratamToTable,
-} from "../dashboard/helpers";
+} from "../../dashboard/helpers";
 
 //
 //

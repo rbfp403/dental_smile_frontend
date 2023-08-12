@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { getGananciasData, getPanelData } from "../api/dashboard.api";
+import { getGananciasData, getPanelData } from "../../api/dashboard.api";
 import {
   onChangeMsgPanelCons,
   onChangeMsgPanelGastos,
@@ -17,14 +17,14 @@ import {
   onChangeMsgPanelGanan,
 } from "../../store";
 
-import { formatearDataPacToTable } from "../pacientes/helpers";
+import { formatearDataPacToTable } from "../../pacientes/helpers";
 
 import {
   formatearDataGastosToTable,
   formatearDataIngresosToTableGan,
   formatearDataProcedRealizadosToTable,
   switchDataDashboard,
-} from "../dashboard/helpers";
+} from "../../dashboard/helpers";
 
 //
 //

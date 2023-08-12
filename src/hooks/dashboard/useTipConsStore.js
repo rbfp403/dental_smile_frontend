@@ -4,7 +4,7 @@ import {
   deleteTipoCons,
   getTipoDeCons,
   updateTipoCons,
-} from "../api/dashboard.api";
+} from "../../api/dashboard.api";
 import {
   clearErrorTipConsMsg,
   onChangeRegErrTipCons,
@@ -20,7 +20,7 @@ import {
   formatearDataTipConsBusq,
   formatearDataTipConsToBD,
   formatearDataTipConsToTable,
-} from "../dashboard/helpers";
+} from "../../dashboard/helpers";
 
 //
 //

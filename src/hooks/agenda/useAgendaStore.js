@@ -20,13 +20,13 @@ import {
   deleteCita,
   getCites,
   updateCita,
-} from "../api/agenda.api";
+} from "../../api/agenda.api";
 import {
   comprobarErrorCite,
   extraerFecha2,
   formatearDataCiteToBD,
   formatedDataCite,
-} from "../agenda/helpers";
+} from "../../agenda/helpers";
 
 //
 //

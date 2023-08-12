@@ -4,7 +4,7 @@ import {
   deleteTipoPago,
   getTipoDePago,
   updateTipoPago,
-} from "../api/dashboard.api";
+} from "../../api/dashboard.api";
 import {
   clearErrorTipPagoMsg,
   onChangeRegErrTipPago,
@@ -18,7 +18,7 @@ import {
   comprobarErrorTipPago,
   formatearDataTipPagoToBD,
   formatearDataTipPagoToTable,
-} from "../dashboard/helpers";
+} from "../../dashboard/helpers";
 
 //
 //

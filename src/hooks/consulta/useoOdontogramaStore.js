@@ -16,13 +16,13 @@ import {
   deletePiezaDental,
   getOdontogramas,
   updatePiezaDental,
-} from "../api/consultas.api";
+} from "../../api/consultas.api";
 import {
   convertOdonListPiezas,
   formatearDataOdontograma,
   formatearDataPiezaDentalToBD,
   verifyPiezaDentalEmpty,
-} from "../consulta/helpers";
+} from "../../consulta/helpers";
 
 //
 //

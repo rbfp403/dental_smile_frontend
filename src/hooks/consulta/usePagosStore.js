@@ -5,7 +5,7 @@ import {
   getPagos,
   getSumPago,
   updatePago,
-} from "../api/consultas.api";
+} from "../../api/consultas.api";
 import {
   changeRegisterErrorCons,
   clearErrorMessageCons,
@@ -13,7 +13,10 @@ import {
   onSetActivePago,
   onSetSumPagos,
 } from "../../store";
-import { comprobarErrorPago, formatearDataPagoToBD } from "../consulta/helpers";
+import {
+  comprobarErrorPago,
+  formatearDataPagoToBD,
+} from "../../consulta/helpers";
 
 //
 //

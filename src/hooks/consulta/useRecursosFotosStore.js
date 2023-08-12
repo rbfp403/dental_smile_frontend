@@ -9,7 +9,7 @@ import {
   onUpdateRecurso,
 } from "../../store";
 
-import { uploadImage } from "../api/uploadImage";
+import { uploadImage } from "../../api/uploadImage";
 
 import {
   createFotografia,
@@ -18,7 +18,7 @@ import {
   deleteRecursoFoto,
   getRecursosFoto,
   updateRecursoFoto,
-} from "../api/consultas.api";
+} from "../../api/consultas.api";
 
 //
 //

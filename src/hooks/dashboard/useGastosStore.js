@@ -5,7 +5,7 @@ import {
   deleteGasto,
   getAllGastos,
   updateGasto,
-} from "../api/dashboard.api";
+} from "../../api/dashboard.api";
 
 import {
   clearErrorGastoMsg,
@@ -21,7 +21,7 @@ import {
   comprobarErrorGasto,
   formatearDataGastoToBD,
   formatearDataGastosToTable,
-} from "../dashboard/helpers";
+} from "../../dashboard/helpers";
 //
 //
 //

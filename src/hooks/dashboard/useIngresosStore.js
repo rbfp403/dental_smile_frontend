@@ -16,13 +16,13 @@ import {
   deleteIngreso,
   getAllingresos,
   updateIngreso,
-} from "../api/dashboard.api";
+} from "../../api/dashboard.api";
 import {
   comprobarErrorIngreso,
   formatearDataConsIngToTable,
   formatearDataIngresoToBD,
   formatearDataIngresosToTable,
-} from "../dashboard/helpers";
+} from "../../dashboard/helpers";
 
 //
 //

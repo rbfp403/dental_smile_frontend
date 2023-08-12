@@ -19,15 +19,15 @@ import {
   deletePaciente,
   getPacienteById,
   getFuturasCitas,
-} from "../api/pacientes.api";
+} from "../../api/pacientes.api";
 
 import {
   comprobarError,
   formatearDataPacToBD,
   formatearDataPacToBusList,
   formatearDataPacToTable,
-} from "../pacientes/helpers";
-import { extractMesAnio, formatedDataCite } from "../agenda/helpers";
+} from "../../pacientes/helpers";
+import { extractMesAnio, formatedDataCite } from "../../agenda/helpers";
 
 //
 //

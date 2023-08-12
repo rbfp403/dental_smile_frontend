@@ -9,9 +9,9 @@ import {
   getSignosVitales,
   updateConsulta,
   updateSignosVitales,
-} from "../api/consultas.api";
+} from "../../api/consultas.api";
 
-import { getPacienteById } from "../api/pacientes.api";
+import { getPacienteById } from "../../api/pacientes.api";
 
 import {
   changeErrorLoadConsultas,
@@ -26,16 +26,16 @@ import {
   onSetActiveSignVit,
 } from "../../store";
 
-import { extractMesAnio } from "../agenda/helpers";
+import { extractMesAnio } from "../../agenda/helpers";
 
-import { formatearDataPacToTable } from "../pacientes/helpers";
+import { formatearDataPacToTable } from "../../pacientes/helpers";
 
 import {
   comprobarErrorCons,
   comprobarErrorSignVit,
   formatearDataConsToBD,
   formatedDataConsulta,
-} from "../historial/helpers";
+} from "../../historial/helpers";
 
 //
 //

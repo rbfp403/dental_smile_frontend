@@ -21,7 +21,7 @@ import {
   updateComplicacion,
   updatePrescripcion,
   updateTratamiento,
-} from "../api/tratamientos.api";
+} from "../../api/tratamientos.api";
 
 //
 //

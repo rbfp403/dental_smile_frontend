@@ -15,13 +15,13 @@ import {
   getEnfermedadesCIE,
   getExamenes,
   updateExamen,
-} from "../api/consultas.api";
+} from "../../api/consultas.api";
 import {
   comprobarErrorExamen,
   formatearDataEnferCieList,
   formatearDataExamenToBD,
   formatearDataExamenToTable,
-} from "../consulta/helpers";
+} from "../../consulta/helpers";
 
 //
 //

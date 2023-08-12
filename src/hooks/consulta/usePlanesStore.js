@@ -4,7 +4,7 @@ import {
   deletePlan,
   getPlanes,
   updatePlan,
-} from "../api/consultas.api";
+} from "../../api/consultas.api";
 import {
   changeRegisterErrorCons,
   clearErrorMessageCons,
@@ -22,7 +22,7 @@ import {
   formatearDataPlanTeraToTable,
   formatearDataPlanToBD,
   tipoPlanesArr,
-} from "../consulta/helpers";
+} from "../../consulta/helpers";
 
 //
 //
