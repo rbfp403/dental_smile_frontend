@@ -14,7 +14,7 @@ import {
   onSaveTipoCons,
   onSetActiveTipoCons,
   onUpdateTipoCons,
-} from "../store";
+} from "../../store";
 import {
   comprobarErrorTipCons,
   formatearDataTipConsBusq,

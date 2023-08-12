@@ -12,7 +12,7 @@ import {
   onLoadPagosList,
   onSetActivePago,
   onSetSumPagos,
-} from "../store";
+} from "../../store";
 import { comprobarErrorPago, formatearDataPagoToBD } from "../consulta/helpers";
 
 //

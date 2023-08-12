@@ -24,7 +24,7 @@ import {
   onLoadPacActivo,
   onSetActivaConsulta,
   onSetActiveSignVit,
-} from "../store";
+} from "../../store";
 
 import { extractMesAnio } from "../agenda/helpers";
 

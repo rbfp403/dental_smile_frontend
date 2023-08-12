@@ -13,7 +13,7 @@ import {
   onSavePlan,
   onSetActivePlan,
   onUpdatePlan,
-} from "../store";
+} from "../../store";
 import {
   comprobarErrorPlan,
   formatearDataPlan,

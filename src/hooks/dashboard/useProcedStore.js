@@ -22,7 +22,7 @@ import {
   onSaveProced,
   onSetActiveProced,
   onUpdateProced,
-} from "../store";
+} from "../../store";
 import {
   comprobarErrorProced,
   formatearDataProcedNomen,

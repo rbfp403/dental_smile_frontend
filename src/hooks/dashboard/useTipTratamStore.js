@@ -14,7 +14,7 @@ import {
   onSaveTipoTratam,
   onSetActiveTipoTratam,
   onUpdateTipoTratam,
-} from "../store";
+} from "../../store";
 
 import {
   comprobarErrorTipTratam,

@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { onChangeMsgErrorLog } from "../store";
+import { onChangeMsgErrorLog } from "../../store";
 import { changePassword, loginAdmin } from "../api/auth.api";
 
 //

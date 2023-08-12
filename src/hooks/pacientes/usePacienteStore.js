@@ -11,7 +11,7 @@ import {
   onLoadPacientesListBusq,
   onSavePaciente,
   onUpdatePaciente,
-} from "../store";
+} from "../../store";
 import {
   getAllPaciente,
   createPaciente,

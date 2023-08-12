@@ -7,7 +7,7 @@ import {
   onSetDataBucal,
   onSetSaludBucalAct,
   onUpdatedSB,
-} from "../store";
+} from "../../store";
 import {
   createPzaSaludBucal,
   createSaludBucal,

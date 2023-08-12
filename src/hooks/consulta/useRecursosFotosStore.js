@@ -7,7 +7,7 @@ import {
   onSaveRecurso,
   onSetActiveRecurso,
   onUpdateRecurso,
-} from "../store";
+} from "../../store";
 
 import { uploadImage } from "../api/uploadImage";
 

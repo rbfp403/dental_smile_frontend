@@ -16,7 +16,7 @@ import {
   onSetActiveGasto,
   onSetGastosTotales,
   onUpdateGasto,
-} from "../store";
+} from "../../store";
 import {
   comprobarErrorGasto,
   formatearDataGastoToBD,

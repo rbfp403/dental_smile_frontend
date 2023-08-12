@@ -8,7 +8,7 @@ import {
   onSaveExamen,
   onSetActiveExamen,
   onUpdateExamen,
-} from "../store";
+} from "../../store";
 import {
   createExamen,
   deleteExamen,

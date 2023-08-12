@@ -13,7 +13,7 @@ import {
   onSaveDiag,
   onSetActiveDiag,
   onUpdateDiag,
-} from "../store";
+} from "../../store";
 import {
   comprobarErrorDiag,
   formatearDataDiagToBD,

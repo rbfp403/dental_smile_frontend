@@ -13,7 +13,7 @@ import {
   onLoadAntecedentes,
   onSaveAntecedente,
   onUpdateAntecedente,
-} from "../store";
+} from "../../store";
 import {
   comprobarErrorAnteced,
   formatearDataAntecedToTable,

@@ -8,7 +8,7 @@ import {
   onSetPiezaActiva,
   onSetPiezasListOdon,
   onUpdatedOdont,
-} from "../store";
+} from "../../store";
 import {
   createOdontograma,
   createPiezaDental,

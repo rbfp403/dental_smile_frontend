@@ -14,7 +14,7 @@ import {
   onChangeBlockPaciente,
   onChangeOpenVCita,
   onLoadCitasAgenda,
-} from "../store";
+} from "../../store";
 import {
   createCita,
   deleteCita,

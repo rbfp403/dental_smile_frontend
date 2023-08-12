@@ -7,7 +7,7 @@ import {
   onSaveTratam,
   onSetActiveTratam,
   onUpdateTratam,
-} from "../store";
+} from "../../store";
 import {
   createComplicacion,
   createPrescripcion,

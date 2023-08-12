@@ -15,7 +15,7 @@ import {
   onLoadListTotalIngreso,
   onChangeParametroBusqueda,
   onChangeMsgPanelGanan,
-} from "../store";
+} from "../../store";
 
 import { formatearDataPacToTable } from "../pacientes/helpers";
 

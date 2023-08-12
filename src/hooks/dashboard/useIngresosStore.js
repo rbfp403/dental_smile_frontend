@@ -10,7 +10,7 @@ import {
   onSetTotalesIngreso,
   onSetTotalesIngresoCons,
   onUpdateIngreso,
-} from "../store";
+} from "../../store";
 import {
   createIngreso,
   deleteIngreso,

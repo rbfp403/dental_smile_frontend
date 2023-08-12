@@ -13,7 +13,7 @@ import {
   onSaveTipoPago,
   onSetActiveTipoPago,
   onUpdateTipoPago,
-} from "../store";
+} from "../../store";
 import {
   comprobarErrorTipPago,
   formatearDataTipPagoToBD,
