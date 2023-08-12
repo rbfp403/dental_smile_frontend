@@ -13,5 +13,5 @@ export * from "./dashboard/tiposPagoSlice";
 export * from "./dashboard/tiposTratamSlice";
 export * from "./global/dataSlice";
 export * from "./pacientes/pacientesSlice";
-export * from "./store";
 export * from "./ui/uiSlice";
+export * from "./store";
