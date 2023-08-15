@@ -29,17 +29,18 @@ import {
 import { useForm, usePacienteStore } from "../../hooks";
 import { formatearPacActiveToForm, formValidations } from "../helpers";
 
-//
-//
-//
-//
-//
-//
 const Transition = forwardRef(function Transition(props, ref) {
   return (
     <Slide direction="left" mountOnEnter unmountOnExit ref={ref} {...props} />
   );
 });
+
+//
+//
+//
+//
+//
+//
 
 export const FormModalPac = ({ openModalForm = false, setOpenModalForm }) => {
   //

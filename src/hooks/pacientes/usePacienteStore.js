@@ -121,6 +121,8 @@ export const usePacienteStore = () => {
   };
 
   const startDeletingPaciente = async (id_paciente = []) => {
+    dispatch(clearErrorMessagePac());
+
     try {
       if (id_paciente.length === 0) {
         await deletePaciente(pacienteActivo.id);
@@ -130,8 +132,28 @@ export const usePacienteStore = () => {
         }
       }
       dispatch(onDeletePaciente(id_paciente));
+
+      dispatch(
+        changeRegisterError({
+          msg: "Sin errores en la eliminacion",
+          error: "",
+        })
+      );
     } catch (error) {
       console.log(error);
+      let msgError = error.response.data.message || "";
+
+      if (msgError.includes("fk_consulta_pago")) {
+        msgError =
+          "No se puede eliminar a el paciente ya que tiene pagos registrados.";
+      }
+      console.log(msgError);
+      dispatch(
+        changeRegisterError({
+          msg: "Hay errores en la eliminacion del paciente",
+          error: msgError,
+        })
+      );
     }
   };
 
@@ -161,7 +183,6 @@ export const usePacienteStore = () => {
       });
 
       let iterator = 0;
-      // let mesTemporal = Object.keys(arrayCitesMonth[0])[0];
 
       //2do bucle
       //Buscar extraer mes de la consulta para que coincida con los objetos del primer bucle

@@ -25,7 +25,6 @@ const TABLE_HEAD = [
 //
 //
 //
-//
 
 export const PacientesPage = () => {
   //store
@@ -42,6 +41,7 @@ export const PacientesPage = () => {
     startDeletingPaciente,
     changeTitleFormReg,
     changeDataPaciente,
+    errorMsgRegPac,
   } = usePacienteStore();
 
   useEffect(() => {
@@ -93,8 +93,17 @@ export const PacientesPage = () => {
     } else {
       setMsgAlertDel("Los registros fueron eliminados exitosamente.");
     }
-    handleOpenSnackbar();
   };
+
+  useEffect(() => {
+    if (errorMsgRegPac.msg === "Hay errores en la eliminacion del paciente") {
+      setMsgAlertDel(errorMsgRegPac.error);
+    }
+
+    if (errorMsgRegPac.msg !== "") {
+      handleOpenSnackbar();
+    }
+  }, [errorMsgRegPac]);
 
   const BtnToolbarTable = () => {
     return (

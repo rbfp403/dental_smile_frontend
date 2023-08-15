@@ -8,6 +8,7 @@ export const consultasSlice = createSlice({
     consultaActiva: null,
     consultasList: [],
     errorLoadConsultas: null,
+
     //Modal Form
     stateOpenFormCons: false,
     titleFormConsulta: "",

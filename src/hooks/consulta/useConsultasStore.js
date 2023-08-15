@@ -79,6 +79,8 @@ export const useConsultasStore = () => {
   const changeTitleFormCons = (flag) => {
     dispatch(onChangeTitleFormCons(flag));
   };
+
+  //
   const startLoadConsultas = async (filtro, param1, param2) => {
     //
     setFiltros({ filtro, param1, param2 });
