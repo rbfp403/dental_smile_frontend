@@ -120,7 +120,7 @@ export const useTipConsStore = () => {
       console.log(msgError);
       dispatch(
         onChangeRegErrTipCons({
-          msg: "Hay errores en la eliminacion",
+          msg: "Hay errores en la eliminacion del paciente",
           error: msgError,
         })
       );
