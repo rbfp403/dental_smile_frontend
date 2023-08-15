@@ -145,7 +145,7 @@ export const usePacienteStore = () => {
 
       if (msgError.includes("fk_consulta_pago")) {
         msgError =
-          "No se puede eliminar a el paciente ya que tiene pagos registrados.";
+          "No se puede eliminar a el paciente debido a que sus consultas tienen pagos registrados.";
       }
       console.log(msgError);
       dispatch(
